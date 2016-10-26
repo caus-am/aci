@@ -8,6 +8,8 @@ ACI is described in an upcoming NIPS 2016 publication:
 
 Also available at: <a href="arxiv.org/abs/1606.07035">arxiv.org/abs/1606.07035</a>
 
+ACI uses clingo 4, also available at <a href="https://github.com/potassco/clingo"> https://github.com/potassco/clingo </a>
+
 Practical information
 ---------------------
 Installation instructions can be found in the INSTALL file.
