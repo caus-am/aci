@@ -1,0 +1,6 @@
+run_sachs_asp.m will run several analysis on a safe-choice subset of the experimental data, without ICAM experiments
+
+Changing the line "expsfile='exps/safe_choice.exps'" into "expsfile='exps/safe_choice_icam.exps'" will run on a disjoint
+subset of experiments where the reagent ICAM was added.
+
+

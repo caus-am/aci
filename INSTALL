@@ -1,0 +1,36 @@
+Installation instructions:
+
+1. Check installation for the existence of ./ASP/clingo
+If it’s not there download the new clingo (http://sourceforge.net/projects/potassco/files/clingo) from the website and rename it to that file.
+ 
+You can try running:
+	./ASP/clingo
+to see whether your clingo installation is working.
+
+
+2. Install R packages:
+
+source('http://bioconductor.org/biocLite.R')
+biocLite(c('graph','RBGL','gmp','RcppArmadillo'))
+install.packages(c('deal','pcalg','combinat','hash','bnlearn','foreach','doMC','caTools','expm'))
+
+
+3. Start R in the "R/" directory and load the code with the following commands:
+> source('load.R')
+> loud() 
+Optionally you can specify how many cores you would like to run in parallel with (e.g. 4) with:
+> loud(4) 
+
+
+4. Test the installation by running an experiment: a simulated graph with 4 nodes
+> pipeline()
+
+You can now run other experiments using the pipeline() function.
+
+If you want to run it on non-simulated data, you can pass a table of experimental data in the parameter ‘samples’ to pipeline().
+
+In order to use the parallel resolution, you also need to specify ‘multipleMinima=“iterativeParallel'
+There are several other options for pipeline(), described in its documentation at pipeline.R.
+
+
+

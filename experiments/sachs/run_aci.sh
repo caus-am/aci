@@ -1,0 +1,2 @@
+cd ../../R/;
+Rscript -e "evalDirectCauses=FALSE; schedule=1; source('load.R');loud(30); samples <- read.csv('../experiments/sachs/data/sachs.csv', sep = '\t'); obs_samples <- samples[which(samples[['experiment']]==1), 1:11]; obs_samples<- log(obs_samples); pipeline(evalDirectCauses=evalDirectCauses, samples=obs_samples, test='logp', p=0.05, n=11, schedule=schedule, solver='clingo', multipleMinima='iterativeParallel', solver_conf='--quiet=2', outputClingo='/tmp/sachs.txt', encode='aci_1.pl', tmpDir='/tmp/', bckg_file='/tmp/sachs.indep')"
