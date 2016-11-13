@@ -2,9 +2,14 @@ Ancestral Causal Inference (ACI):
 =====================================================
 Ancestral Causal Inference (ACI) is a logic-based causal discovered algorithm for causal systems with latent confounders and no feedback.
 ACI is described in an upcoming NIPS 2016 publication:
-
-*Sara Magliacane, Tom Claassen, Joris M. Mooij:
-"Ancestral Causal Inference", NIPS 2016*.
+<pre>
+@InProceedings{ACI,
+  author =    {Sara Magliacane and Tom Claassen and Joris M. Mooij},
+  title =     {Ancestral Causal Inference},
+  booktitle = {NIPS},
+  year =      {2016},
+}
+</pre>
 
 Also available at: <a href="arxiv.org/abs/1606.07035">arxiv.org/abs/1606.07035</a>
 
