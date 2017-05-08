@@ -39,6 +39,25 @@ bootstrap <- function(repeat_bootstrap=10,
   L$G <- L$G/repeat_bootstrap
   L$Ge <- L$Ge/repeat_bootstrap
   L$objective <- -1
+  
+  if (!is.null(solverConfig$outputClingo)){
+      G <- if (solverConfig$evalDirectCauses) {L$G} else {L$C}
+      
+      outputFile <- file(solverConfig$outputClingo, "w")
+      for (i in 1:nrow(G)){
+          for (j in 1:ncol(G)){
+              if (G[i,j] < 0) {
+                  cat("-", file=outputFile)
+              }
+              cat("causes(",j,",", i,")=", abs(G[i,j]), sep="", file=outputFile)
+              if (!is.infinite(G[i,j])){
+                  cat(".00000", sep="", file=outputFile)
+              }
+              cat("\n", sep="", file=outputFile)
+          }
+      }
+      close(outputFile)
+  }
 
   L
 }
