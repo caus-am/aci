@@ -1,12 +1,15 @@
 Ancestral Causal Inference (ACI): 
 =====================================================
 Ancestral Causal Inference (ACI) is a logic-based causal discovered algorithm for causal systems with latent confounders and no feedback.
-ACI is described in an upcoming NIPS 2016 publication:
+You can find a short introduction <a href="https://github.com/caus-am/aci/blob/master/INTRO.md"> here </a>.
+
+ACI is described in more detail in the NIPS 2016 publication:
 <pre>
 @InProceedings{ACI,
   author =    {Sara Magliacane and Tom Claassen and Joris M. Mooij},
   title =     {Ancestral Causal Inference},
-  booktitle = {NIPS},
+  Booktitle = {{A}dvances in {N}eural {I}nformation {P}rocessing {S}ystems 27 ({NIPS}-16)},
+	Pages = {4466--4474},
   year =      {2016},
 }
 </pre>
@@ -17,7 +20,7 @@ ACI uses the Answer Set Programming solver clingo 4, also available at <a href="
 
 Practical information
 ---------------------
-Installation instructions can be found in the INSTALL file.
+Installation instructions can be found in the <a href="https://github.com/caus-am/aci/blob/master/INSTALL"> INSTALL </a> file.
 
 The repository is organized as follows:
 - The ASP folder contains various Answer Set Programming encodings of causal discovery algorithms.
