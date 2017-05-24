@@ -9,7 +9,7 @@ ACI is described in more detail in the NIPS 2016 publication:
   author =    {Sara Magliacane and Tom Claassen and Joris M. Mooij},
   title =     {Ancestral Causal Inference},
   Booktitle = {{A}dvances in {N}eural {I}nformation {P}rocessing {S}ystems 27 ({NIPS}-16)},
-	Pages = {4466--4474},
+  Pages = {4466--4474},
   year =      {2016},
 }
 </pre>
